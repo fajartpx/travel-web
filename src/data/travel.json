@@ -1,0 +1,92 @@
+{
+    "menu": [
+ {
+  "createdAt": "2022-08-01T14:03:31.520Z",
+  "name": "Burger Ayam",
+  "image": "https://foodish-api.herokuapp.com/images/burger/burger68.jpg",
+  "category": "Burger",
+  "price": 18848.92,
+  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis dui in urna hendrerit tempus. ",
+  "stock": 33,
+  "status": ".H_<$%?oh3",
+  "id": "1"
+ },
+ {
+  "createdAt": "2022-07-31T22:56:43.011Z",
+  "name": "Burger Sapi",
+  "image": "https://foodish-api.herokuapp.com/images/burger/burger61.jpg",
+  "category": "Burger",
+  "price": 41863.27,
+  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis dui in urna hendrerit tempus. ",
+  "stock": 99,
+  "status": "rUt{d4<U]s",
+  "id": "2"
+ },
+ {
+  "createdAt": "2022-08-01T02:54:36.956Z",
+  "name": "Burger Keju",
+  "image": "https://foodish-api.herokuapp.com/images/burger/burger32.jpg",
+  "category": "Burger",
+  "price": 5296.09,
+  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis dui in urna hendrerit tempus. ",
+  "stock": 53,
+  "status": "TziDBjVF(/",
+  "id": "3"
+ },
+ {
+  "createdAt": "2022-08-01T07:45:31.342Z",
+  "name": "Burger Original",
+  "image": "https://foodish-api.herokuapp.com/images/burger/burger34.jpg",
+  "category": "Burger",
+  "price": 39161.29,
+  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis dui in urna hendrerit tempus. ",
+  "stock": 0,
+  "status": "]p&fG`Y^,C",
+  "id": "4"
+ },
+ {
+  "createdAt": "2022-07-31T23:50:50.537Z",
+  "name": "Burger Pedas",
+  "image": "https://foodish-api.herokuapp.com/images/burger/burger12.jpg",
+  "category": "Burger",
+  "price": 35014.81,
+   "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis dui in urna hendrerit tempus. ",
+  "stock": 100,
+  "status": "A&;>l+;`n|",
+  "id": "5"
+ },
+ {
+  "createdAt": "2022-08-01T01:35:58.921Z",
+  "name": "Burger Jumbo",
+"image": "https://foodish-api.herokuapp.com/images/burger/burger24.jpg",
+  "category": "Burger",
+  "price": 50322.55,
+  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis dui in urna hendrerit tempus. ",
+  "stock": 87,
+  "status": "JWb$O8K3=$",
+  "id": "6"
+ },
+ {
+  "createdAt": "2022-08-01T01:19:11.607Z",
+  "name": "Burger Jamur",
+  "image": "https://foodish-api.herokuapp.com/images/burger/burger21.jpg",
+  "category": "Burger",
+  "price": 53171.09,
+  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis dui in urna hendrerit tempus. ",
+  "stock": 7,
+  "status": "L;Xzf;|h/N",
+  "id": "7"
+ },
+ {
+  "createdAt": "2022-08-01T08:16:33.487Z",
+  "name": "Burger Tuna",
+  "image": "https://foodish-api.herokuapp.com/images/burger/burger26.jpg",
+  "category": "Burger",
+  "price": 93614.56,
+  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis dui in urna hendrerit tempus. ",
+  "stock": 24,
+  "status": "F(4z+fZ1jJ",
+  "id": "8"
+ }
+]
+}
