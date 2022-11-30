@@ -7,6 +7,8 @@
     width: 100%;
     height: auto;
     background-color:white;
+    margin: 70px 10px;
+
 }
 
 #slider {
@@ -48,8 +50,8 @@
 }
 
 .card-style {
-    width: 312px;
-    height: 412px;
+    width: 282px;
+    height: 382px;
     background-color: rgb(231, 231, 231);
     margin: 6px;
     display: inline-block;
@@ -60,8 +62,8 @@
 }
 
 .image-style {
-    width: 312px;
-    height: 412px;
+    width: 290px;
+    height: 390px;
     object-fit: contain;
 }
 
@@ -80,7 +82,13 @@
 
 .region-style {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1px;
     padding: 0px 8px;
+}
+.district-style {
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 1px;
+    
 }
