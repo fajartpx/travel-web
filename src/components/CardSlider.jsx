@@ -18,7 +18,8 @@ const CardSlider =()=> {
 ,{district:"Sulawesi Selatan", region:"Palu", images:"https://images.unsplash.com/photo-1655679152783-f4d22c72264a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"}
 ,{district:"Sulawesi Tengah", region:"Makasar", images:"https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=480&q=80"}
 ,{district:"Sumatera Selatan", region:"Palembang", images:"https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=480&q=80"}]
-  return(
+  
+return(
     <div id="container-slider">
      <div id="slider" ref={slide}>
      {

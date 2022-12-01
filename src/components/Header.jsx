@@ -1,18 +1,45 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import "./header-style.css"
 import Logo from "../image/logo.png"
 import Indonesia from "../image/indonesia.png"
 import {MdCall,MdOutlineAccountCircle,MdOutlineSearch} from "react-icons/md";
 
+
 const Navbar = ()=>{
+    const [fix, setFix] = useState(false);
+    const x = useRef();
+    const y = useRef();
+   
+        
+    const fixed =()=>{
+       if (window.scrollY>=10){
+            setFix(true)
+            y.current.removeChild(x.current)
+            console.log(x.current)
+            // console.log( x.current.rem())
+            }
+         else if (window.scrollY<=0) {
+            
+            
+           setTimeout(() => {
+            setFix(false)
+           y.current.prepend(x.current)
+        },100)
+         }
+        // document.getElementsByClassName("top-style")
+       
+        
+    }
+    window.addEventListener("scroll", fixed)
+
     return (
-        <header>
-            <div className="top-style">
+        <header ref={y}>
+            <div ref={x} className="top-style">
                 <p className="top-text-style"><img src={Indonesia} />Indonesia</p>
                 <p className="top-text-style"><MdCall size={20} padding={"0 10px 0 0"}/>Contact Us</p>
 
             </div>
-            <nav className="navbar-style">
+            <nav className={fix?"navbar-style fixed":"navbar-style"}>
                 <div className="navbar-logo-style">
                     <a href="#"><img src={Logo}/></a>
                 </div>
