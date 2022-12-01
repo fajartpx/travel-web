@@ -1,36 +1,41 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./header-style.css"
 import Logo from "../image/logo.png"
 import Indonesia from "../image/indonesia.png"
 import {MdCall,MdOutlineAccountCircle,MdOutlineSearch} from "react-icons/md";
-
+import { IconContext } from "react-icons";
 
 const Navbar = ()=>{
     const [fix, setFix] = useState(false);
     const x = useRef();
     const y = useRef();
-   
-        
+    const z = useRef();
+    //mengatur posisi navbar agar fixed
+
+    useEffect(()=>{
+        window.addEventListener("scroll", fixed)
+    },[fix])
+    
     const fixed =()=>{
-       if (window.scrollY>=10){
+        if (window.scrollY>=10) {
             setFix(true)
-            y.current.removeChild(x.current)
-            console.log(x.current)
-            // console.log( x.current.rem())
-            }
-         else if (window.scrollY<=0) {
-            
-            
-           setTimeout(() => {
-            setFix(false)
-           y.current.prepend(x.current)
-        },100)
-         }
-        // document.getElementsByClassName("top-style")
-       
-        
+            return x.current.remove()
     }
-    window.addEventListener("scroll", fixed)
+        else if (window.scrollY<=0) {
+         setTimeout(() => {
+            setFix(false)
+            y.current.prepend(x.current)
+        },100)
+    }}
+    
+
+    const mouseOver =({target})=> {
+        target.style.color="#FE4D00" ;
+    }
+    const mouseOver2 =({target})=> {
+        target.style.color="#FFFFFF" ;
+    }
+
 
     return (
         <header ref={y}>
@@ -41,17 +46,18 @@ const Navbar = ()=>{
             </div>
             <nav className={fix?"navbar-style fixed":"navbar-style"}>
                 <div className="navbar-logo-style">
-                    <a href="#"><img src={Logo}/></a>
+                    <a href="#"><img src={Logo} /></a>
                 </div>
                 <ul className="navbar-list-style">
-                    <li>Explors</li>
-                    <li>Offers</li>
-                    <li>About</li>
+                    <a href="#" className="link-nav-style"><li>Explors</li></a>
+                    <a href="#" className="link-nav-style"><li>Offers</li></a>
+                    <a href="#" className="link-nav-style"><li>About</li></a>
                 </ul>
-                <div className="navbar-login-style">
-                   <MdOutlineSearch size={20} color={"#ffffff"} style={{padding:"0 10px"}} />
-                   <MdOutlineAccountCircle size={20} color={"#ffffff"}   />
-                   
+                <div ref={z} className="navbar-login-style">
+                    <IconContext.Provider  value={{ size:"20px", className: "icon-style" }}>
+                   <MdOutlineSearch onMouseOver={mouseOver} onMouseOut={mouseOver2}  style={{padding:"0 10px"}} />
+                   <MdOutlineAccountCircle onMouseOver={mouseOver} onMouseOut={mouseOver2}   />
+                   </IconContext.Provider>
                 </div>
             </nav>
         </header>

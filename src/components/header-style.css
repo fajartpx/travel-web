@@ -42,18 +42,45 @@
 .navbar-login-style {
     margin-right: 80px;
 }
+
+.navbar-login-style:hover {
+    margin-right: 80px;
+}
+
 .navbar-logo-style > a {
     text-decoration: none;
     font-size: 20px;
     
 }
-.navbar-list-style, li {
+
+.navbar-list-style, .navbar-list-style li  {
     display: flex;
-    padding: 0px 20px;
-    border: 0px none transparent;
+    padding: 0px 40px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.link-nav-style {
+    text-decoration: none;
+}
+
+.link-nav-style li:hover {
+    text-decoration:underline;
+    text-decoration-color:#FE4D00 ;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px; 
 }
 
 
+.icon-style {
+    color: "#ffffff";
+    size: "80px";
+    
+}
+
+.icon-style svg:hover {
+    color: #FE4D00;
+}
 
 /* destination style */
 .destination-style {
