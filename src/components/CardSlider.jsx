@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import './cardslider-style.css';
+import './style/cardslider-style.css';
 import { MdKeyboardArrowLeft,MdKeyboardArrowRight,MdLocationPin } from "react-icons/md";
 
 const CardSlider =()=> {

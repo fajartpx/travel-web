@@ -1,6 +1,5 @@
 import React from "react";
-import './trips-style.css'
-import borobudur from '../image/borobudur.jpg'
+import './style/trips-style.css'
 import {MdLocationPin } from "react-icons/md";
 import Button from "./Button";
 

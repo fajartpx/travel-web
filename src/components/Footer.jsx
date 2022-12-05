@@ -1,9 +1,8 @@
 import React from "react";
-import './footer-style.css'
+import './style/footer-style.css'
 import {MdOutlineLanguage,MdEmail,MdKeyboardArrowRight} from "react-icons/md";
 import Appstore from '../image/appstore.png'
 import Playstore from '../image/playstore.png'
-import Indonesia from "../image/indonesia.png"
 
 
 export const Language =()=>{

@@ -1,9 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
-import "./header-style.css"
+import "./style/header-style.css"
 import Logo from "../image/logo.png"
 import Indonesia from "../image/indonesia.png"
 import {MdCall,MdOutlineAccountCircle,MdOutlineSearch} from "react-icons/md";
 import { IconContext } from "react-icons";
+import Dropdown from "./DropdownHeader";
 
 const Navbar = ()=>{
     const [fix, setFix] = useState(false);
@@ -73,27 +74,13 @@ const Destination =()=> {
         <div className="xxx">
         <h1>It's time to travel</h1>
         <form className="destination-city-container-style">
-            <select  className="destination-city-style" name="destination">
-                <option value="Pekanbaru">Pekanbaru</option>
-                <option value="Padang">Padang</option>
-                <option value="Bandung">Bandung</option>
-            </select>
-            <select className="destination-city-style" name="destination">
-                <option value="Pekanbaru">Duration</option>
-                <option value="Padang">Padang</option>
-                <option value="Bandung">Bandung</option>
-            </select>
-            <select className="destination-city-style" name="destination">
-                <option value="Pekanbaru">Travel Date</option>
-                <option value="Padang">Padang</option>
-                <option value="Bandung">Bandung</option>
-            </select>
-             <select className="destination-city-style" name="destination">
-                <option value="Pekanbaru">Travelers</option>
-                <option value="Padang">Padang</option>
-                <option value="Bandung">Bandung</option>
-            </select>
-            <button className="destination-button-style">Search</button>
+        <div className='pencarian-style'>
+        <Dropdown borderRadiusx="20px 0 0 20px"/>
+        <Dropdown/>
+        <Dropdown/>
+        <Dropdown/>
+        <button className="destination-button-style">Search</button>
+        </div>
         </form>
         </div>
         </div>
