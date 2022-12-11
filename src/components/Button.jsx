@@ -1,7 +1,7 @@
 import React from "react";
 
 const Button =(props)=> {
-    const{title, color,padding, backgroundColor, fontSize, fontWeight} = props;
+    const{title, color,padding, backgroundColor, fontSize, fontWeight,onClick} = props;
     return(
         <button style={{
             color:color,
@@ -10,7 +10,7 @@ const Button =(props)=> {
             border:'2px solid transparent',
             fontSize:fontSize,
             fontWeight:fontWeight,
-            borderRadius:'6px'}} >{title}</button>
+            borderRadius:'6px'}} onClick={onClick}>{title}</button>
     )
 }
 

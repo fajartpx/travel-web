@@ -4,7 +4,8 @@ import Logo from "../image/logo.png"
 import Indonesia from "../image/indonesia.png"
 import {MdCall,MdOutlineAccountCircle,MdOutlineSearch} from "react-icons/md";
 import { IconContext } from "react-icons";
-import Dropdown from "./DropdownHeader";
+import SeachDestination from './DropdownSearch';
+
 
 const Navbar = ()=>{
     const [fix, setFix] = useState(false);
@@ -74,11 +75,8 @@ const Destination =()=> {
         <div className="xxx">
         <h1>It's time to travel</h1>
         <form className="destination-city-container-style">
+        <SeachDestination />
         <div className='pencarian-style'>
-        <Dropdown borderRadiusx="20px 0 0 20px"/>
-        <Dropdown/>
-        <Dropdown/>
-        <Dropdown/>
         <button className="destination-button-style">Search</button>
         </div>
         </form>
