@@ -16,32 +16,26 @@ const data ={
        
 
         
-const DropdownDestination =()=>{
-    const [option, setOption] = useState(false)
-    const [value, setValue] = useState("")
-    
+const DropdownDestination =({datax, setvalue})=>{
+
     return(
-        <div className="dropdown-container-style">
-            <div className="select-container-style" style={{borderRadius:"40px 0 0 40px"}}  onClick={()=>setOption(!option)}>
-                <div className="dropdown-style">
-                    <p className="dropdown-title">{value?value:option?"choose":"Destination"}</p>
-                    <IconContext.Provider value={{size:"20", className:option?"icon-arrow-style":null}}>
-                        <MdKeyboardArrowRight />
-                    </IconContext.Provider>
-                </div>
-            </div>
-            <div className={option?"dropdown-option-style":"hidden"}>
+            
                 <ul className="option-style">
-                    {data.Destination.map((e)=>{
+                    {datax.map((value)=>{
+
+                        const getValue=(data)=>{
+                            setvalue(data);
+                        }
+                        
                         return(
-                            <li className="item-style" onClick={()=>{setValue(e);setOption(!option)}}>
-                                <p>{e}</p>
+                            <li className="item-style" onClick={()=>getValue(value)} >
+                                <p>{value}</p>
                             </li>
+
                         )
-                            })}
-                        </ul>
-                    </div>
-                </div>
+                   })}
+                </ul>
+                
             )
         }
 
@@ -125,7 +119,7 @@ const DropdownTravels =()=>{
                     </IconContext.Provider>
                 </div>
             </div>
-            <div className="travelers-option-style">
+            <div className={option?"travelers-option-style":"hidden"}>
                 <ul className="travelers-list-style">
                     {Object.keys(data.Travel).map((val) => {
                     return(
@@ -147,14 +141,47 @@ const DropdownTravels =()=>{
 }
 
 
+const Destination =()=>{
+    const [option, setOption] = useState(false)
+    const [value, setValue] = useState("")
+
+   
+
+    const funs2 =(data)=>{
+        setValue(data)
+        setOption(!option)
+    }
+
+
+    
+    return(
+        <div className="dropdown-container-style">
+            <div className="select-container-style" style={{borderRadius:"40px 0 0 40px"}}  onClick={()=>setOption(!option)}>
+                <div className="dropdown-style">
+                    <p className="dropdown-title">{value?value:option?"choose":"Destination"}</p>
+                    <IconContext.Provider value={{size:"20", className:option?"icon-arrow-style":null}}>
+                        <MdKeyboardArrowRight />
+                    </IconContext.Provider>
+                </div>
+            </div>
+            <div className={option?"dropdown-option-style":"hidden"}>
+            <DropdownDestination datax={data.Destination} setvalue={funs2}  />
+            </div>
+        </div>
+    )
+}
+
+
 
 const ContainerSearch =()=>{
     return(
         <div className="container-search-style">
-            <DropdownDestination />
+             <Destination />
+             <Destination />
+            {/* <DropdownDestination />
             <DropdownDuration />
             <DropdownDate />
-            <DropdownTravels/>
+            <DropdownTravels/> */}
         </div>
     )
 }
