@@ -28,7 +28,7 @@ return(
         <div className="card-style" style={{backgroundImage:`url(${e.images})`}}>
           <div className="card-desc-style">
             <div className="text-desc-style">
-              <p className="district-style"><MdLocationPin color={'red'} size={15}/>{e.district}</p>
+              <p className="district-style">{e.district}</p>
               <p className="region-style">{e.region}</p>
             </div>
           </div>

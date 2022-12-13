@@ -5,6 +5,13 @@
     align-items: flex-start;
     height: auto;
     width: 100%;
+    position: relative;
+    z-index: 1;
+  
+}
+
+.hidden {
+    display: none;
 }
 
 .top-style {
@@ -45,7 +52,14 @@
     width: 100%;
 }
 
-.navbar-style.fixed {
+.navbar-style-fixed {
+    display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 60px;
+        position: fixed;
+        width: 100%;
     background-color: #0E1531;
 }
 .navbar-login-style {
@@ -98,6 +112,8 @@
     justify-content: center;
     align-items: center;
     height: 80%;
+    position: relative;
+    bottom: 40px;
     
 }
 
@@ -135,14 +151,13 @@
 .header-style {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 120vh;
     width: auto;
     background-image: url(../../image/header-background.png);
     color:#ffffff;
     background-position: center;
     background-size: cover;
-    position: relative;
-    z-index: 10;
+    
     
 
 }

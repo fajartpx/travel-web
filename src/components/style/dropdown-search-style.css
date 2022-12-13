@@ -3,24 +3,39 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: slategray;
+    width: auto;
+    height: auto;
+    color: #000000;
+    position: relative;
+    z-index: 1;
+ 
 }
 
+.stylenya {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    margin: 1px;
+}
+
+.style-date {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    margin: 1px;
+}
 /* Dropdown Destination style */
 
 .dropdown-container-style {
-    width: 200px;
-    height: 300px;
+    width: auto;
+    height: 200px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0 0 0 1px;
     padding: 0;
     box-sizing: border-box;
-
-    
-
 }
 
 .select-container-style{
@@ -28,20 +43,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
-    height: 56px;
     background-color: #FFFFFF;
     /* s */
 }
 
-.dropdown-style {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 56px;
-    width: 80%;
-    
-}
+
 
 .icon-arrow-style {
     transform: rotate(90deg)
@@ -56,6 +62,8 @@
     bottom: 6px;
     overflow-y: scroll;
     padding-left: 10px;
+   
+  
 }
 
 .hidden {
@@ -63,24 +71,28 @@
 }
 
 .option-style {
-    height: auto;
-    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    height: auto;
+    width: 90%;
+    background-color: #FFFFFF;
     margin: 0;
     padding: 0;
+    overflow-y: scroll;
+    position: relative;
+    top: 1px;
+    left: 20px;
+    z-index: 1;
     
 }
 
 .item-style {
+    height: 40px;
+    width: 100%;
+    list-style: none;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    list-style-type: none;
-    height: 40px;
-    width: auto;
-   
 }
 
 .item-style:hover{
@@ -101,6 +113,7 @@
     top: 0px;
     overflow-y: scroll;
     transition: width 2s;
+
 }
 
 .destination-list-style {
@@ -110,6 +123,10 @@
     background-color: #FFFFFF;
     margin: 0;
     padding: 0;
+    overflow-y: scroll;
+    position: relative;
+    top: 1px;
+   
 }
 
 .destination-item-style {
@@ -140,39 +157,35 @@
 
 /* Date picker */
 
+
+
 .date-container-style {
-    width: 200px;
-    height: 200px;
     display: flex;
     flex-direction: column;
-    margin: 0 0 0 1px;
-    padding: 0;
-    box-sizing: border-box;
-
-
-
+    width: 200px;
+    height: 500px;
 }
 
-.date-container-style {
+.date-select-style{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 200px;
-    height: 56px;
     background-color: #FFFFFF;
-    /* s */
+
 }
 
 .date-style {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     height: 56px;
     width: 80%;
     position: relative;
-    top: 145px;
-    right: 15px;
+    bottom: 15px;
+    left: 75px;
+   
     
 }
 
@@ -182,6 +195,7 @@
     position: relative;
     top: 0px;
     transition: width 2s;
+   
 }
 
 .travelers-list-style{
@@ -198,10 +212,11 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: auto;
     position: relative;
     top: 0px;
     transition: width 2s;
+    padding: 0px;
+   
    
 }
 
@@ -211,9 +226,36 @@
     align-items: center;
     width: 100%;
     padding: 0 10px;
+    z-index: 0px;
 }
 .aa {
     width: 100%;
     height: auto;
     background-color: #FE4D00;
+}
+
+
+
+.dropdown-style {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    width: 80%;
+
+}
+
+.search-button-style {
+    display: flex;
+    flex-direction: column;
+    margin: 1px;
+    padding: 0;
+    height: 56px;
+    width: 100px;
+    border-radius: 0px 20px 20px 0px;
+    border: 0px;
+    background-color: #FE4D00;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
 }

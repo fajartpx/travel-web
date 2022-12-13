@@ -26,7 +26,7 @@ const VersionDua =({image})=>{
                 <h2 className="title-style">Responsible Time Travel</h2>
                 <p className="desc-style">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 <div className='trip2-button-style'>
-                <Button  color='#FFFFFF' backgroundColor='#FE4D00' padding='6px 40px' fontSize='15px' fontWeight='600' title='View Trips'/>
+                <Button  padding='6px 40px' fontSize='15px' fontWeight='600' title='View Trips'/>
                 </div>
         </article>
         <img src={image}  className="image-style"/>
