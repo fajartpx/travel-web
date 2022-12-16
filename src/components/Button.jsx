@@ -1,16 +1,17 @@
 import React from "react";
 import "./style/button-style.css"
 const Button =(props)=> {
-    const{title, color,padding, backgroundColor, fontSize, fontWeight,onClick} = props;
+    const{ className ,title, color,padding='10px 70px', backgroundColor, fontSize="18px", fontWeight, letterSpacing="2px", borderRadius = "6px", onClick} = props;
     return(
-        <button className="but-style" style={{
+        <button className={className} style={{
             color:color,
             padding:padding, 
             backgroundColor:backgroundColor, 
             border:'2px solid transparent',
             fontSize:fontSize,
             fontWeight:fontWeight,
-            borderRadius:'6px',
+            borderRadius: borderRadius,
+            letterSpacing:letterSpacing,
             }} onClick={onClick}>{title}</button>
     )
 }

@@ -1,4 +1,4 @@
-.but-style:hover{
+.ver-dua-style:hover{
     background-color: #FE4D00;
     color: #ffffff;
     -moz-transition: all .2s ease-in;
@@ -7,9 +7,23 @@
         transition: all .2s ease-in;
 }
 
-.but-style {
+.ver-dua-style {
     background-color: #f87c47;
-    color: #ffffff;
-    
-    
+    color: #ffffff;  
 }
+
+.ver-satu-style:hover {
+    background-color: #ffffff;
+    color: #a13101;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+.ver-satu-style {
+    background-color: #ffffff;
+    color: #FE4D00;
+}
+
+
+
