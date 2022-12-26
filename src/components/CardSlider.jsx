@@ -28,6 +28,7 @@ const CardSlider =()=> {
       const x =value.findIndex((obj)=>obj.id===nilai)
       value[x].favorite = !value[x].favorite
       setValue([...value])
+      console.log(value)
   }
   
           

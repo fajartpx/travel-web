@@ -78,9 +78,10 @@
     background-color: #FFFFFF;
     margin: 0;
     padding: 0;
+    border-radius: 1px 0 6px 6px;
     overflow-y: scroll;
     position: relative;
-    top: 1px;
+    top: 2px;
     left: 20px;
     z-index: 1;
     
@@ -102,6 +103,10 @@
 
 .item-style p {
     padding-left: 10px;
+    height: 56px;
+    display: flex;
+        justify-content: flex-start;
+        align-items: center;
 }
 
 /* destination container style */
