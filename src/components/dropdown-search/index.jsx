@@ -1,10 +1,10 @@
 import React, { useState, useRef } from "react";
-import "./style/dropdown-search-style.css";
+import "./dropdown-search-style.css";
 import { MdKeyboardArrowRight, MdPersonAddAlt1 } from "react-icons/md";
 import { IconContext } from "react-icons";
 import { DayPicker } from "react-day-picker";
 import "react-day-picker/dist/style.css";
-import Button from "./Button";
+import Button from "../button";
 
 const data = {
   Destination: ["Pekanbaru", "Batam", "Kuansing", "inhu", "inhil"],

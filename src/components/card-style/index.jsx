@@ -1,5 +1,5 @@
 import React, { useRef,useState } from "react";
-import './style/cardslider-style.css';
+import "./cardslider-style.css"
 import { MdGrade,MdKeyboardArrowLeft,MdKeyboardArrowRight,MdFavoriteBorder,MdFavorite } from "react-icons/md";
 
 

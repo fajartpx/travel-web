@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "./Button";
-import './style/trips2-style.css'
+import Button from "../../button";
+import './trips2-style.css'
 
 
 const VersionSatu =({image,ver=1})=>{

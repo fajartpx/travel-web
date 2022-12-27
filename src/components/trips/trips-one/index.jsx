@@ -1,7 +1,7 @@
 import React from "react";
-import "./style/trips-style.css";
+import "./trips-style.css";
 import { MdLocationPin } from "react-icons/md";
-import Button from "./Button";
+import Button from "../../button";
 
 const Trips = ({ image, link, nameLocation }) => {
   return (

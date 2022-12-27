@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "./style/header-style.css";
-import Logo from "../image/logo.png";
-import Indonesia from "../image/indonesia.png";
+import "./header-style.css";
+import Logo from "../../assets/image/logo.png";
 import {
   MdCall,
   MdOutlineAccountCircle,
@@ -9,7 +8,7 @@ import {
   MdLocationPin,
 } from "react-icons/md";
 import { IconContext } from "react-icons";
-import DropdownSearch from "./DropdownSearch";
+import DropdownSearch from "../dropdown-search";
 
 // Navbar Component
 const Navbar = ({ flag, lag }) => {

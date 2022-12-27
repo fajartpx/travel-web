@@ -115,7 +115,7 @@
   height: 100%;
   flex-basis: 60%;
   position: relative;
-  background-image:url(../../image/group.jpg);
+  background-image:url(../../assets/image/group.jpg);
   background-size: cover;
 
 }

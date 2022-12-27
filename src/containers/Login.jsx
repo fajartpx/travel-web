@@ -1,8 +1,7 @@
 import React from "react";
-import Button from "../components/Button";
 import "./style/login-style.css";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import Logo from "../image/logo-black.png";
+import Logo from "../assets/image/logo-black.png";
 const LoginForm = () => {
   return (
     <div className="container-login-form-style">
@@ -29,11 +28,11 @@ const LoginForm = () => {
           <p>OR</p>
           <img
             style={{ height: "45px", weight: "45px" }}
-            src={require("../image/google.png")}
+            src={require("../assets/image/google.png")}
           />
           <img
             style={{ height: "45px", weight: "45px" }}
-            src={require("../image/facebook.png")}
+            src={require("../assets/image/facebook.png")}
           />
         </div>
       </form>

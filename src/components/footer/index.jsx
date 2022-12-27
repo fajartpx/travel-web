@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import './style/footer-style.css'
+import './footer-style.css'
 import {MdOutlineLanguage,MdEmail,MdKeyboardArrowRight} from "react-icons/md";
-import Appstore from '../image/appstore.png'
-import Playstore from '../image/playstore.png'
-import amerika from '../image/amerika.png'
-import indonesia from '../image/indonesia.png'
+import Appstore from '../../assets/image/appstore.png'
+import Playstore from '../../assets/image/playstore.png'
+import amerika from '../../assets/image/amerika.png'
+import indonesia from '../../assets/image/indonesia.png'
 import { GrYoutube,GrTwitter,GrFacebook,GrInstagram } from "react-icons/gr";
 import { IconContext } from "react-icons"
 
