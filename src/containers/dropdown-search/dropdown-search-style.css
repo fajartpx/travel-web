@@ -36,6 +36,7 @@
     margin: 0 0 0 1px;
     padding: 0;
     box-sizing: border-box;
+    color: #000000;
 }
 
 .select-container-style{
@@ -169,14 +170,15 @@
     flex-direction: column;
     width: 200px;
     height: 500px;
+    margin: 1px;
 }
 
 .date-select-style{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #FFFFFF;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #FFFFFF;
 
 }
 
@@ -273,5 +275,76 @@
 
 .search-button-style:hover {
     background-color: #c23b02;
+
+}
+
+/* header style */
+.header-style {
+    display: flex;
+    flex-direction: column;
+    height: 120vh;
+    width: auto;
+    background-image: url(../../assets/image/header-background.png);
+    color: #ffffff;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.location-background-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    left: 20px;
+    top: 60px;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: #ffffff;
+    font-weight: 500;
+    height: auto;
+    width: 350px;
+
+}
+
+.location-background-style p:hover {
+    color: #FE4D00;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: #FE4D00;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* FilterSearch style */
+.filter-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    position: relative;
+    bottom: 40px;
+}
+
+.filter-container-style {
+    width: 100%;
+    height: 40px;
+}
+
+.filter-dropdown-style {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+    position: relative;
+    z-index: 1;
 
 }

@@ -1,0 +1,24 @@
+
+.select-container-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    /* s */
+}
+
+
+.icon-arrow-style {
+    transform: rotate(90deg)
+}
+
+
+.dropdown-style {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    width: 80%;
+
+}
